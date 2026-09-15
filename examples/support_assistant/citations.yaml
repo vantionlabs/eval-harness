@@ -1,0 +1,26 @@
+# Test sets can also be YAML, with lists instead of pipe-separated terms.
+# These cases add the optional `citations` column: every [n] marker must point
+# at a source the assistant returned, and each context_ref must be among them.
+cases:
+  - id: CIT-001
+    category: citations
+    input: Can I still get my money back on an annual plan I bought last week?
+    context_ref: kb/billing/refund-policy.md
+    expected_behaviour: States the 30-day refund rule and cites the refund policy.
+    must_include: ["30 days"]
+    citations: required
+    grading: both
+    severity: high
+    source: written by team
+    added_on: 2026-09-15
+
+  - id: CIT-002
+    category: citations
+    input: I was charged twice this month, and I also need to add two seats to our team.
+    context_ref: [kb/billing/duplicate-charges.md, kb/billing/seats.md]
+    expected_behaviour: Answers both parts and cites the article for each.
+    citations: required
+    grading: deterministic
+    severity: medium
+    source: written by team
+    added_on: 2026-09-15

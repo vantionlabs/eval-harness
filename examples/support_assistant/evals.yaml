@@ -1,0 +1,32 @@
+# The harness configuration for the example support assistant.
+# Paths are relative to this file.
+
+test_sets:
+  - test-set.csv
+  - citations.yaml
+
+target:
+  name: support-assistant
+  version: example-v1
+  adapter: eval_adapter:answer
+
+judge:
+  # Pin an exact model version. Needs ANTHROPIC_API_KEY; run with --no-judge without one.
+  model: anthropic:claude-sonnet-5
+  # Where context_ref files are read from when the target returns no sources.
+  sources_dir: .
+
+concurrency: 4
+retries: 3
+timeout_seconds: 60
+
+# USD per million tokens. The harness ships no price list; copy current prices
+# from your provider. `example-model` is made up, like its token counts.
+prices:
+  example-model: { input_per_mtok: 0.50, output_per_mtok: 2.00 }
+
+gate:
+  baseline: baseline.json
+  tolerance: 0.02
+
+reports_dir: reports
