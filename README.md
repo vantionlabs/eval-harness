@@ -1,4 +1,26 @@
-# Eval harness
+<p align="center">
+  <a href="https://vantion.co">
+    <img src="https://raw.githubusercontent.com/vantionlabs/.github/main/profile/banner.png" alt="Vantion Labs" width="100%" />
+  </a>
+</p>
+
+<h1 align="center">Eval harness</h1>
+
+<p align="center">
+  <b>Regression tests for LLM applications and AI agents.</b><br />
+  Score your test set on every change, compare with the last release, fail the build when quality drops.
+</p>
+
+<p align="center">
+  <a href="https://github.com/vantionlabs/eval-harness/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/vantionlabs/eval-harness/actions/workflows/ci.yml/badge.svg" /></a>
+  <a href="https://www.python.org"><img alt="python 3.12" src="https://img.shields.io/badge/python_3.12-3776AB?style=flat-square&logo=python&logoColor=white" /></a>
+  <img alt="test sets: CSV or YAML" src="https://img.shields.io/badge/test_sets-CSV_or_YAML-f4f4f6?style=flat-square" />
+  <img alt="any LLM provider" src="https://img.shields.io/badge/any_LLM_provider-f4f4f6?style=flat-square" />
+  <a href="LICENSE"><img alt="MIT" src="https://img.shields.io/badge/licence-MIT-f4f4f6?style=flat-square" /></a>
+  <a href="https://vantion.co"><img alt="Vantion Labs" src="https://img.shields.io/badge/by-Vantion_Labs-2233f0?style=flat-square" /></a>
+</p>
+
+---
 
 Regression tests for LLM applications and AI agents, from
 [Vantion Labs](https://vantion.co). Run it on every change to a prompt, model or
