@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Regression tests for LLM apps and agents: test sets as files, deterministic and model-graded checks, a baseline gate for CI, cost and latency tracking."
 readme = "README.md"
 license = "MIT"
-authors = [{ name = "Vantion Labs", email = "hello@vantion.co" }]
+authors = [{ name = "Vantion Labs" }]
 requires-python = ">=3.12"
 dependencies = [
     "httpx>=0.28",

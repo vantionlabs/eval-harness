@@ -151,6 +151,4 @@ uv run pytest
 
 ## Licence
 
-MIT. See [LICENSE](LICENSE). Built by [Vantion Labs](https://vantion.co); if you
-want help putting evals around your own AI system,
-[talk to the founder](https://vantion.co/book-a-call).
+MIT. See [LICENSE](LICENSE). Built by [Vantion Labs](https://vantion.co).
