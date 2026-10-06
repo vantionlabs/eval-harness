@@ -1,7 +1,5 @@
 <p align="center">
-  <a href="https://vantion.co">
     <img src="https://raw.githubusercontent.com/vantionlabs/.github/main/profile/banner.png" alt="Vantion Labs" width="100%" />
-  </a>
 </p>
 
 <h1 align="center">Eval harness</h1>
@@ -17,13 +15,13 @@
   <img alt="test sets: CSV or YAML" src="https://img.shields.io/badge/test_sets-CSV_or_YAML-f4f4f6?style=flat-square" />
   <img alt="any LLM provider" src="https://img.shields.io/badge/any_LLM_provider-f4f4f6?style=flat-square" />
   <a href="LICENSE"><img alt="MIT" src="https://img.shields.io/badge/licence-MIT-f4f4f6?style=flat-square" /></a>
-  <a href="https://vantion.co"><img alt="Vantion Labs" src="https://img.shields.io/badge/by-Vantion_Labs-2233f0?style=flat-square" /></a>
+  <img alt="Vantion Labs" src="https://img.shields.io/badge/by-Vantion_Labs-2233f0?style=flat-square" />
 </p>
 
 ---
 
 Regression tests for LLM applications and AI agents, from
-[Vantion Labs](https://vantion.co). Run it on every change to a prompt, model or
+Vantion Labs. Run it on every change to a prompt, model or
 tool: it scores your test set with checks in code and a model grader, compares
 the result with the last release, and fails the build when quality drops.
 
@@ -151,4 +149,4 @@ uv run pytest
 
 ## Licence
 
-MIT. See [LICENSE](LICENSE). Built by [Vantion Labs](https://vantion.co).
+MIT. See [LICENSE](LICENSE). Built by Vantion Labs.
